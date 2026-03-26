@@ -1,0 +1,102 @@
+{
+  "regelingen": [
+    {
+      "id": "gemeentelijke_mantelzorgwaardering",
+      "naam": "Gemeentelijke mantelzorgwaardering",
+      "categorie": "gemeente",
+      "uitleg": "Veel gemeenten bieden een jaarlijkse waardering voor mantelzorgers. Dit kan een geldbedrag zijn (gemiddeld \u20ac100\u2013400), maar ook een cadeaubon, gratis activiteiten of een kortingspas.",
+      "voorwaarden": ["Woonachtig in de betreffende gemeente","Minimaal 8 uur per week mantelzorg verlenen","De persoon voor wie gezorgd wordt heeft een Wmo-indicatie, PGB of zorgindicatie"],
+      "aanvragen_bij": "Gemeentelijk Wmo-loket",
+      "aanvraag_periode": "Verschilt per gemeente, vaak september\u2013december",
+      "links": [
+        { "label": "Regelhulp.nl \u2013 Vergoedingen mantelzorg", "url": "https://www.regelhulp.nl/mantelzorgers/geld-en-waardering/vergoedingen-voor-mantelzorgers" }
+      ],
+      "trigger": "altijd",
+      "wizard": "mantelzorgwaardering"
+    },
+    {
+      "id": "respijtzorg_wmo",
+      "naam": "Respijtzorg via de Wmo (tijdelijke vervanging)",
+      "categorie": "gemeente",
+      "uitleg": "Via de Wmo kunt u tijdelijke vervanging van uw zorg aanvragen \u2014 ook wel respijtzorg of logeerzorg. Zo kunt u even op adem komen.",
+      "voorwaarden": ["Mantelzorger woonachtig in de gemeente","De zorgontvanger heeft een Wmo-indicatie of andere zorgindicatie"],
+      "aanvragen_bij": "Gemeentelijk Wmo-loket",
+      "aanvraag_periode": "Het hele jaar door aanvraagbaar",
+      "links": [
+        { "label": "Mezzo \u2013 Respijtzorg vinden", "url": "https://www.mezzo.nl/respijtzorg" }
+      ],
+      "trigger": "altijd",
+      "wizard": null
+    },
+    {
+      "id": "kortdurend_zorgverlof",
+      "naam": "Kortdurend zorgverlof (betaald, via werkgever)",
+      "categorie": "werk",
+      "uitleg": "Als werknemer heeft u recht op kortdurend zorgverlof: maximaal 2\u00d7 uw wekelijkse arbeidsduur per jaar. U ontvangt dan 70% van uw loon.",
+      "voorwaarden": ["U werkt in loondienst","U verzorgt een thuiswonende zieke partner, kind, of ouder"],
+      "aanvragen_bij": "Werkgever (HR-afdeling of leidinggevende)",
+      "aanvraag_periode": "Aanvragen wanneer nodig",
+      "links": [
+        { "label": "Rijksoverheid \u2013 Kortdurend zorgverlof", "url": "https://www.rijksoverheid.nl/onderwerpen/zorgverlof/kortdurend-zorgverlof" }
+      ],
+      "trigger": "werkend",
+      "wizard": "zorgverlof_brief"
+    },
+    {
+      "id": "langdurend_zorgverlof",
+      "naam": "Langdurend zorgverlof (onbetaald, via werkgever)",
+      "categorie": "werk",
+      "uitleg": "Voor intensieve mantelzorg kunt u maximaal 6\u00d7 uw wekelijkse arbeidsduur onbetaald verlof opnemen per jaar. Uw baan blijft beschermd.",
+      "voorwaarden": ["U werkt in loondienst","U verzorgt een ernstig zieke partner, kind of ouder","Minimaal 2 weken van tevoren schriftelijk aanvragen"],
+      "aanvragen_bij": "Werkgever (minimaal 2 weken van tevoren schriftelijk)",
+      "aanvraag_periode": "Minimaal 2 weken vooraf aanvragen",
+      "links": [
+        { "label": "Rijksoverheid \u2013 Langdurend zorgverlof", "url": "https://www.rijksoverheid.nl/onderwerpen/zorgverlof/langdurend-zorgverlof" }
+      ],
+      "trigger": "werkend",
+      "wizard": "zorgverlof_brief"
+    },
+    {
+      "id": "vervangende_mantelzorg_verzekering",
+      "naam": "Vervangende mantelzorg via zorgverzekering",
+      "categorie": "zorgverzekering",
+      "uitleg": "Sommige zorgverzekeraars vergoeden vervangende mantelzorg als u tijdelijk niet beschikbaar bent. Dit staat meestal in de aanvullende verzekering.",
+      "voorwaarden": ["Aanvullende verzekering die vervangende mantelzorg dekt","Vooraf goedkeuring aanvragen bij zorgverzekeraar"],
+      "aanvragen_bij": "Zorgverzekeraar (van tevoren aanvragen)",
+      "aanvraag_periode": "Van tevoren aanvragen, niet achteraf",
+      "links": [
+        { "label": "Consumentenbond \u2013 Vervangende mantelzorg", "url": "https://www.consumentenbond.nl/zorgverzekering/vervangende-mantelzorg-via-je-zorgverzekeraar" }
+      ],
+      "trigger": "heeft_zorgverzekering",
+      "wizard": null
+    },
+    {
+      "id": "pgb_als_mantelzorger",
+      "naam": "Betaald worden als mantelzorger via PGB",
+      "categorie": "pgb",
+      "uitleg": "Als de persoon voor wie u zorgt een PGB heeft via de Wmo of WLZ, kan hij/zij u daarmee als informele zorgverlener betalen. Belastingvrij tot \u20ac3.500 per jaar.",
+      "voorwaarden": ["De zorgontvanger heeft een PGB (Wmo of WLZ)","U bent bereid een zorgovereenkomst te ondertekenen"],
+      "aanvragen_bij": "Via de budgethouder en de SVB",
+      "aanvraag_periode": "Zodra er een PGB is: altijd mogelijk",
+      "links": [
+        { "label": "SVB \u2013 PGB trekkingsrecht", "url": "https://www.svb.nl/nl/pgb" }
+      ],
+      "trigger": "altijd",
+      "wizard": null
+    },
+    {
+      "id": "mantelzorgtelefoon_steunpunt",
+      "naam": "Mantelzorgtelefoon & lokaal steunpunt (gratis)",
+      "categorie": "ondersteuning",
+      "uitleg": "Gratis luisterend oor en praktisch advies via Mezzo: bel 0800-0800 (ma\u2013vr 08.00\u201320.00, gratis). Lokale steunpunten bieden coaching en respijtzorg.",
+      "voorwaarden": [],
+      "aanvragen_bij": "Mezzo / lokaal steunpunt mantelzorg",
+      "aanvraag_periode": "Altijd beschikbaar",
+      "links": [
+        { "label": "Mezzo \u2013 Mantelzorgtelefoon 0800-0800", "url": "https://www.mezzo.nl/mantelzorgtelefoon" }
+      ],
+      "trigger": "altijd",
+      "wizard": null
+    }
+  ]
+}
