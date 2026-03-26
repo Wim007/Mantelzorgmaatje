@@ -1,0 +1,30 @@
+{
+  "wizards": {
+    "mantelzorgwaardering": {
+      "naam": "Aanvraag Gemeentelijke Mantelzorgwaardering",
+      "velden": [
+        { "id": "naam_aanvrager",        "vraag": "Wat is jouw volledige naam?" },
+        { "id": "adres",                 "vraag": "Wat is jouw woonadres (straat, huisnummer, postcode, woonplaats)?" },
+        { "id": "geboortedatum",         "vraag": "Wat is jouw geboortedatum?" },
+        { "id": "naam_zorgontvanger",    "vraag": "Wat is de naam van de persoon voor wie jij zorgt?" },
+        { "id": "relatie_zorgontvanger", "vraag": "Wat is jouw relatie tot die persoon?" },
+        { "id": "uren_per_week",         "vraag": "Hoeveel uur per week verleen jij gemiddeld mantelzorg?" },
+        { "id": "duur_mantelzorg",       "vraag": "Hoe lang ben jij al mantelzorger?" },
+        { "id": "indicatie",             "vraag": "Heeft de persoon voor wie jij zorgt een Wmo-indicatie, PGB of andere zorgindicatie?" }
+      ],
+      "template": "Geachte medewerker van de gemeente {gemeente},\n\nHierbij dien ik een aanvraag in voor de gemeentelijke mantelzorgwaardering.\n\nMijn gegevens:\nNaam: {naam_aanvrager}\nAdres: {adres}\nGeboortedatum: {geboortedatum}\n\nIk verleen mantelzorg aan:\nNaam: {naam_zorgontvanger}\nRelatie tot mij: {relatie_zorgontvanger}\n\nIk ben al {duur_mantelzorg} mantelzorger en verleen gemiddeld {uren_per_week} uur mantelzorg per week.{indicatie_regel}\n\nIk verzoek u vriendelijk deze aanvraag in behandeling te nemen.\n\nMet vriendelijke groet,\n{naam_aanvrager}"
+    },
+    "zorgverlof_brief": {
+      "naam": "Aanvraag Zorgverlof bij Werkgever",
+      "velden": [
+        { "id": "naam_werknemer",      "vraag": "Wat is jouw naam?" },
+        { "id": "naam_leidinggevende", "vraag": "Hoe heet jouw leidinggevende of HR-contactpersoon?" },
+        { "id": "bedrijf",             "vraag": "Wat is de naam van jouw werkgever / bedrijf?" },
+        { "id": "type_verlof",         "vraag": "Wil je kortdurend (betaald) of langdurend (onbetaald) zorgverlof?" },
+        { "id": "periode",             "vraag": "Voor welke periode vraag je verlof aan?" },
+        { "id": "naam_zieke",          "vraag": "Voor wie vraag je dit verlof aan? (naam en relatie)" }
+      ],
+      "template": "Aan: {naam_leidinggevende}\nOrganisatie: {bedrijf}\n\nBetreft: Aanvraag {type_verlof}\n\nGeachte {naam_leidinggevende},\n\nHierbij verzoek ik formeel om {type_verlof} conform de Wet Arbeid en Zorg (WAZO).\n\nIk ben mantelzorger voor {naam_zieke}. De situatie vraagt om mijn persoonlijke aanwezigheid en ondersteuning.\n\nIk verzoek verlof voor de periode: {periode}.\n\nIk ben bereid dit nader toe te lichten en mee te denken over een werkbare oplossing.\n\nMet vriendelijke groet,\n{naam_werknemer}"
+    }
+  }
+}
